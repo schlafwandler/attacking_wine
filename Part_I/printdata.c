@@ -22,6 +22,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     int dummy;
     printf("Stack:\t\t\t%p\n",&dummy);
 
+    void *heap = malloc(128);
+    printf("Heap:\t\t\t%p\n",heap);
+
     getchar();
 
     return 0;
